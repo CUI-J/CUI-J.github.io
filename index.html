@@ -126,18 +126,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -251,6 +251,157 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/28/resource-show/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jian Cui">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CUI-J'S Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/12/28/resource-show/" class="post-title-link" itemprop="url">How to show picture/music/video in Hexo</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-12-28 09:12:52 / 修改时间：11:20:44" itemprop="dateCreated datePublished" datetime="2021-12-28T09:12:52+08:00">2021-12-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>913</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="1-图片插入"><a href="#1-图片插入" class="headerlink" title="1. 图片插入"></a>1. 图片插入</h2><p><strong>安装图片插件</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>配置文件_config.yml</strong></p>
+<p>将post_asset_folder设置为true</p>
+<p><strong>然后就可以直接引用了</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![（添加图片描述）](AI.jpg)</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2021/12/28/resource-show/AI.jpg" alt="AI"></p>
+<h2 id="2-音频插入"><a href="#2-音频插入" class="headerlink" title="2. 音频插入"></a>2. 音频插入</h2><p><strong>插入本地绝对路径音频</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;audio controls autoplay&gt;</span><br><span class="line">	&lt;<span class="built_in">source</span> src=<span class="string">&quot;/local/audio/music.mp3&quot;</span> <span class="built_in">type</span>=<span class="string">&quot;audio/mpeg&quot;</span>&gt;</span><br><span class="line">&lt;/audio&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <title>Music</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  </head>
+  <body style="“text-align:" center;”>
+      <audio controls autoplay>
+      <source src="/local/audio/music.mp3" type="audio/mpeg">
+      当该元素不被浏览器支持时，该段文本被显示。
+      </audio>
+  </body>
+</html>
+
+<p>​      </p>
+<p><strong>插入音频url</strong></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">frameborder</span>=<span class="string">&quot;no&quot;</span> <span class="attr">border</span>=<span class="string">&quot;0&quot;</span> <span class="attr">marginwidth</span>=<span class="string">&quot;0&quot;</span> <span class="attr">marginheight</span>=<span class="string">&quot;0&quot;</span> <span class="attr">width</span>=<span class="string">430</span> <span class="attr">height</span>=<span class="string">86</span> <span class="attr">src</span>=<span class="string">&quot;//music.163.com/outchain/player?type=2&amp;id=114389&amp;auto=0&amp;height=66&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="430" height="86" src="//music.163.com/outchain/player?type=2&id=114389&auto=0&height=66"></iframe>
+
+
+
+
+
+<h2 id="3-视频插入"><a href="#3-视频插入" class="headerlink" title="3. 视频插入"></a>3. 视频插入</h2><p><strong>插入本地绝对路径视频</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;video src=<span class="string">&#x27;/local/video/oceans.mp4&#x27;</span> <span class="built_in">type</span>=<span class="string">&#x27;video/mp4&#x27;</span> controls=<span class="string">&#x27;controls&#x27;</span>  width=<span class="string">&#x27;100%&#x27;</span> height=<span class="string">&#x27;100%&#x27;</span>&gt;</span><br><span class="line">&lt;/video&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<video src="/local/video/oceans.mp4" type="video/mp4" controls="controls" width="100%" height="100%">
+</video>
+
+
+
+<p><strong>插入视频url</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;video src=<span class="string">&#x27;http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4&#x27;</span> <span class="built_in">type</span>=<span class="string">&#x27;video/mp4&#x27;</span> controls=<span class="string">&#x27;controls&#x27;</span>  width=<span class="string">&#x27;100%&#x27;</span> height=<span class="string">&#x27;100%&#x27;</span>&gt;</span><br><span class="line">&lt;/video&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<video src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" controls="controls" width="100%" height="100%">
+</video>
+
+
+
 
       
     </div>
@@ -495,13 +646,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">2k</span>
+    <span title="站点总字数">3k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">2 分钟</span>
+    <span title="站点阅读时长">3 分钟</span>
   </span>
 </div>
 <div class="busuanzi-count">
